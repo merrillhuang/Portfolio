@@ -1,3 +1,32 @@
 body {
-    background: blue;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 100px 1fr 100px;
+}
+
+header {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+    text-align: center;
+}
+
+nav {
+    grid-row: 2 / span 1;
+    grid-column 1 / span 1;
+}
+
+main {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#aside {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+}
+
+footer {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 3;
+    text-align: center;
 }

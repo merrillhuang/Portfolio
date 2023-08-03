@@ -2,6 +2,8 @@ body {
     display: grid;
     grid-template-rows: 100px 1fr 100px;
     grid-template-columns: 100px 1fr 100px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgb(62, 58, 58, 0.3), rgba(0,0,0,0.4));
+    font-family: fantasy;
 }
 
 header {
@@ -12,7 +14,7 @@ header {
 
 nav {
     grid-row: 2 / span 1;
-    grid-column 1 / span 1;
+    grid-column: 1 / span 1;
 }
 
 main {
@@ -30,3 +32,26 @@ footer {
     grid-column: 1 / span 3;
     text-align: center;
 }
+
+img {
+    display: block;
+    width: 25%;
+    max-width: 300px;
+    margin: 5px auto 5px auto;
+}
+
+#animation {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: circle 750ms linear infinite;
+    /* background-image: conic-gradient(cornflowerblue 100%, chocolate 100%); */
+}
+
+ @keyframes circle {
+    0%   {background-image: conic-gradient(cornflowerblue 100%, chocolate 100%);}
+    25%   {background-image: conic-gradient(cornflowerblue 75%, chocolate 100%);}
+    50%  {background-image: conic-gradient(cornflowerblue 50%, chocolate 100%);}
+    75%  {background-image: conic-gradient(cornflowerblue 25%, chocolate 100%);}
+    100%  {background-image: conic-gradient(cornflowerblue 0%, chocolate 100%);}
+}  

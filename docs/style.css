@@ -44,14 +44,19 @@ img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    animation: circle 750ms linear infinite;
-    /* background-image: conic-gradient(cornflowerblue 100%, chocolate 100%); */
+    animation: circle 800ms linear infinite;
 }
 
  @keyframes circle {
-    0%   {background-image: conic-gradient(cornflowerblue 100%, chocolate 100%);}
-    25%   {background-image: conic-gradient(cornflowerblue 75%, chocolate 100%);}
-    50%  {background-image: conic-gradient(cornflowerblue 50%, chocolate 100%);}
-    75%  {background-image: conic-gradient(cornflowerblue 25%, chocolate 100%);}
-    100%  {background-image: conic-gradient(cornflowerblue 0%, chocolate 100%);}
-}  
+    0% {background-image: conic-gradient(cornflowerblue 100%, chocolate 0%);}
+    10%  {background-image: conic-gradient(chocolate 0%, cornflowerblue 0%);}
+    20%  {background-image: conic-gradient(chocolate 0%, cornflowerblue 25%);}
+    30%  {background-image: conic-gradient(chocolate 0%, cornflowerblue 50%);}
+    40%  {background-image: conic-gradient(chocolate 0%, cornflowerblue 75%);}
+    50% {background-image: conic-gradient(chocolate 0%, cornflowerblue 100%);}
+    60%  {background-image: conic-gradient(chocolate 100%, cornflowerblue 0%);}
+    70% {background-image: conic-gradient(cornflowerblue 0%, chocolate 25%);} 
+    80% {background-image: conic-gradient(cornflowerblue 0%, chocolate 50%);} 
+    90% {background-image: conic-gradient(cornflowerblue 0%, chocolate 75%);} 
+    100% {background-image: conic-gradient(cornflowerblue 0%, chocolate 100%);}
+ }  
